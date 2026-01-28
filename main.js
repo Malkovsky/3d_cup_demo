@@ -234,3 +234,17 @@ window.addEventListener('resize', () => {
 
 // Start animation
 animate();
+
+// Fetch GitHub star count
+fetch('https://api.github.com/repos/malkovsky/3d_cup_demo')
+    .then(response => response.json())
+    .then(data => {
+        const starsElement = document.getElementById('github-stars');
+        if (starsElement && data.stargazers_count !== undefined) {
+            starsElement.textContent = `★ ${data.stargazers_count}`;
+        }
+    })
+    .catch(error => {
+        console.log('Could not fetch GitHub stars:', error);
+        // Keep default star icon if fetch fails
+    });

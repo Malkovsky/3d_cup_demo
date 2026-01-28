@@ -12,7 +12,7 @@ Interactive 3D cup visualization system with texture mapping using Three.js and 
 
 ## Live Demo
 
-Visit the live demo: [https://YOUR_USERNAME.github.io/cylinder/](https://YOUR_USERNAME.github.io/cylinder/)
+Visit the live demo: [https://malkovsky.github.io/3d_cup_demo/](https://malkovsky.github.io/3d_cup_demo/)
 
 ## Local Development
 
