@@ -96,7 +96,7 @@ function createCup(texturePath) {
             }
             
             // Create straight cylinder geometry (same radius top and bottom)
-            const geometry = new THREE.CylinderGeometry(1.0, 1.0, 1.75, 64, 1, false);
+            const geometry = new THREE.CylinderGeometry(1.0, 1.0, 2.25, 64, 1, false);
             
             // Create materials array: [side, top, bottom]
             // Only the side (index 0) gets the texture
@@ -137,9 +137,9 @@ function createCup(texturePath) {
             handleMesh = new THREE.Mesh(handleGeometry, handleMaterial);
             
             // Position and rotate handle on the side of the cup
-            handleMesh.position.set(1.4, 0.875, 0);  // Move outward so ends attach to cylinder
+            handleMesh.position.set(0.0, 0.8, 1);  // Move outward so ends attach to cylinder
             handleMesh.rotation.x = Math.PI / 2;  // Rotate on X-axis instead of Y
-            handleMesh.rotation.y = 0;
+            handleMesh.rotation.y = Math.PI / 2;
             scene.add(handleMesh);
             
             isLoading = false;
@@ -174,7 +174,7 @@ function createCup(texturePath) {
 }
 
 // Initialize with default QR texture
-createCup('qr_bit_pattern_ascii.png');
+createCup('/3d_cup_demo/qr_verbose_white.png');
 
 // Image upload handler
 const uploadButton = document.getElementById('uploadButton');
