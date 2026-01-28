@@ -1,0 +1,25 @@
+{
+  "name": "3d-cup-visualization",
+  "version": "1.0.0",
+  "description": "Interactive 3D cup visualization system with QR code texture mapping",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "three.js",
+    "3d",
+    "visualization",
+    "webgl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
+}
